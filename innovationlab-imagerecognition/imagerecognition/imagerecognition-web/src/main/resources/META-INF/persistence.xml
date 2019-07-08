@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+	<persistence-unit name="com.fda_oitilab-web_war_1.0-SNAPSHOTPU"
+		transaction-type="JTA">
+		<provider>org.apache.openjpa.persistence.PersistenceProviderImpl</provider>
+    	
+		<jta-data-source>MYSQL_JNDI [jdbc:mysql://localhost:3306/image?zeroDateTimeBehavior=convertToNull]</jta-data-source> 
+		<exclude-unlisted-classes>false</exclude-unlisted-classes>
+		<properties>
+			<property name="openjpa.jdbc.SynchronizeMappings" value="buildSchema(ForeignKeys=true)" />
+			<property name="openjpa.jdbc.MappingDefaults" value="ForeignKeyDeleteAction=restrict, JoinForeignKeyDeleteAction=restrict" />
+			<property name="openjpa.Log" value="DefaultLevel=TRACE,SQL=TRACE" />
+			<property name="javax.persistence.schema-generation.database.action" value="create" />
+			<!--  <property name="openjpa.jdbc.QuerySQLCache" value="true(EnableStatistics=true)" />-->
+		</properties>
+	</persistence-unit>
+</persistence>

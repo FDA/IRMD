@@ -1,0 +1,11 @@
+
+Dear Innovation Team,
+
+My name is ${personName} and I am from Center ${centerName} and I am interested in the ${eventTitle} (On-Site/Webex) Event on ${eventDate}.  Can you please sign me up?
+
+This request came from the Innovation Lab Mobile Application.  Thank you!  
+ 
+Regards,
+${personName}
+${emailAddress}
+${phoneNumber}

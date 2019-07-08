@@ -1,0 +1,8 @@
+Dear Innovation Team,
+
+My name is ${personName} and I am from Center ${centerName} and I am interested in a tour of the Innovation Lab.  I am interested in touring the lab on ${appointmentDate}.  There will be approximately ${numOfPerson} number of people in my tour group.  Can you please get back to me with a time?  I am requesting this via the Innovation Lab mobile application.  Thank you for your time.
+ 
+Regards,
+${personName}
+${emailAddress}
+${phoneNumber}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+<!-- <Resource id="MYSQL_JNDI" type="javax.sql.DataSource">#Fri Feb 26 12:30:17 EST 2016
+jdbcDriver=com.mysql.jdbc.Driver
+password=
+userName=root
+jdbcUrl=jdbc\:mysql\://localhost\:3306/image?zeroDateTimeBehavior\=convertToNull
+validationQuery="SELECT 1"
+</Resource> -->
+
+<Resource id="MYSQL_JNDI" type="javax.sql.DataSource">
+jdbcDriver=com.mysql.jdbc.Driver
+password={{ Enter your database password here}}
+userName={{ Enter your database userName }}
+jdbcUrl=jdbc\:mysql\://{{Your ip here}}\:3306/image?zeroDateTimeBehavior\=convertToNull
+validationQuery="SELECT 1"
+</Resource>
+
+</resources>

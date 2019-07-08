@@ -1,0 +1,29 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jee="http://www.springframework.org/schema/jee"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+		http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee.xsd">
+
+	
+	<bean id="ejbFacade" class="com.fda.mdir.db.dao.ejb.EJBFacade">
+		<property name="ejb">
+			<map>
+				<entry key="MDIRUserDAO" value="java:global/imagerecognition-web/MDIRUserDAO" />
+				<entry key="MDIRUserSessionDAO" value="java:global/imagerecognition-web/MDIRUserSessionDAO" />
+				<entry key="MDIRPasswordResetRequestDAO" value="java:global/imagerecognition-web/MDIRPasswordResetRequestDAO" />
+				<entry key="MDIRPatientDAO" value="java:global/imagerecognition-web/MDIRPatientDAO" />
+				<entry key="MDIRSurgeryTypeDAO" value="java:global/imagerecognition-web/MDIRSurgeryTypeDAO" />
+				<entry key="MDIRCaseDAO" value="java:global/imagerecognition-web/MDIRCaseDAO" />
+				<entry key="MDIRAssemblyDAO" value="java:global/imagerecognition-web/MDIRAssemblyDAO" />
+				<entry key="MDIRProductDAO" value="java:global/imagerecognition-web/MDIRProductDAO" />
+                <entry key="MDIRRoleDAO" value="java:global/imagerecognition-web/MDIRRoleDAO" />
+			</map>
+		</property>
+	</bean>
+
+	<bean id="multipartResolver"
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<property name="maxUploadSize" value="5000000" />
+	</bean>
+
+</beans>
